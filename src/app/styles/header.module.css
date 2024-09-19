@@ -1,0 +1,118 @@
+.header {
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 6px -6px lightgrey;
+    background-color: white;
+    color: var(--foreground);
+    font-size: var(--fs-m);
+    position: sticky;
+    top: 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.homeNavLink {
+    display: grid;
+    place-items: center;
+    margin-right: auto;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 2px solid var(--green);
+    color: var(--foreground);
+}
+
+.mobileNavToggle {
+    all: unset;
+
+    display: none;
+    position: fixed;
+    top: 1.5rem;
+    right: 2rem;
+    z-index: 10;
+    width: 2rem;
+    aspect-ratio: 1;
+    font-size: 2rem;
+    background-image: url("../../../public/hamburger.svg");
+}
+
+.mobileNavToggle[aria-expanded="true"] {
+    background-image: url("../../../public/close.svg");
+}
+
+.mobileNavToggle:hover,
+.mobileNavToggle:focus-visible {
+    cursor: pointer;
+    outline: var(--green) solid 2px;
+    border-radius: 5px;
+}
+
+.mobileNavToggle[aria-expanded="true"]:hover,
+.mobileNavToggle[aria-expanded="true"]:focus-visible {
+    outline-color: var(--background);
+}
+
+.navLinks {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    transition: all 350ms ease-out;
+}
+
+.navLinks[data-visible="true"] {
+    transform: translateX(0%);
+}
+
+.navLinks a {
+    position: relative;
+}
+
+.navLinks a:focus-visible {
+    outline: none;
+}
+
+.navLinks a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 4px;
+    border-radius: 3px;
+    background-color: var(--green);
+    transition: width 0.35s ease;
+}
+
+.navLinks a:hover::before,
+.navLinks a:focus-visible::before {
+    width: 100%;
+}
+
+@media (max-width: 675px) {
+    .mobileNavToggle {
+        display: block;
+    }
+
+    .navLinks {
+        flex-direction: column;
+        gap: 1.5rem;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        margin-left: 30%;
+        padding-top: 7.5rem;
+        width: 70%;
+        min-height: 100vh;
+        background-color: var(--green);
+        transform: translateX(100%);
+    }
+
+    .navLinks a::before {
+        background-color: var(--background);
+    }
+}
