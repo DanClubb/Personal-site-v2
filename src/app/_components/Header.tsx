@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { useState } from "react";
 import styles from "../styles/header.module.css";
+import Hamburger from "./Hamburger";
+import Close from "./close";
 
 export default function Header() {
     const [mobileNavExpanded, setMobileNavExpanded] = useState(false);
@@ -17,7 +19,9 @@ export default function Header() {
                     aria-controls="nav"
                     aria-expanded={mobileNavExpanded}
                     onClick={() => setMobileNavExpanded((prev) => !prev)}
-                ></button>
+                >
+                    {mobileNavExpanded ? <Close /> : <Hamburger />}
+                </button>
                 <ul
                     className={styles.navLinks}
                     data-visible={mobileNavExpanded}
