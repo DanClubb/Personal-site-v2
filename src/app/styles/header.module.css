@@ -23,6 +23,11 @@
     border-radius: 50%;
     border: 2px solid var(--green);
     color: var(--foreground);
+    transition: background-color 0.3s ease;
+}
+
+.homeNavLink:hover {
+    background-color: var(--green);
 }
 
 .mobileNavToggle {
