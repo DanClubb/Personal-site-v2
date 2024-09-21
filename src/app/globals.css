@@ -1,12 +1,12 @@
 :root {
     --background: #ffffff;
-    --foreground: #171717;
+    --foreground: #374151;
     --green: #57ba86;
 
     --fs-xs: 0.8rem;
     --fs-s: 1rem;
     --fs-m: 1.35rem;
-    --fs-l: 2.25rem;
+    --fs-l: 2.15rem;
     --fs-xl: 3.5rem;
     --fs-2xl: 5rem;
 }

@@ -3,8 +3,8 @@
 import Link from "next/link";
 import { useState } from "react";
 import styles from "../styles/header.module.css";
-import Hamburger from "./Hamburger";
-import Close from "./close";
+import Close from "./icons/Close";
+import Hamburger from "./icons/Hamburger";
 
 export default function Header() {
     const [mobileNavExpanded, setMobileNavExpanded] = useState(false);
