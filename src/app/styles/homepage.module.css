@@ -39,6 +39,14 @@
     margin-top: 1rem;
 }
 
+.socialLinks a {
+    transition: rotate 0.25s ease;
+}
+
+.socialLinks a:hover {
+    rotate: 10deg;
+}
+
 .scroll {
     display: block;
     margin-bottom: 1.5rem;
