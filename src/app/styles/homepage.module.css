@@ -1,13 +1,14 @@
-/* .section {
-    min-height: 100vh;
-} */
+.section {
+    padding: 4rem;
+}
 
 .section:nth-child(even) {
-    --greenOpacity: rgba(87, 186, 134, 0.25);
+    --greenOpacity: rgba(87, 186, 134, 0.75);
     background-color: var(--greenOpacity);
 }
 
-/* Hero Section */
+/* //////////// Hero Section //////////// */
+
 .hero {
     display: flex;
     flex-direction: column;
@@ -72,4 +73,78 @@
     60% {
         transform: translateY(-15px);
     }
+}
+
+/* /////////////////////////////////////// */
+
+/* //////////// Experience Section //////////// */
+
+.experienceSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    /* height: 100vh; */
+    padding-bottom: 20rem;
+    background-image: url("../../../public/wave.png");
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.experienceSection div {
+    width: 70ch;
+    font-size: var(--fs-m);
+}
+
+.learnMore {
+    display: block;
+    margin-top: 1rem;
+    padding: 0.75rem 1rem;
+    width: fit-content;
+    border-radius: 0.25rem;
+    background-color: var(--complimentary);
+    position: relative;
+}
+
+.learnMoreArrow {
+    position: absolute;
+    right: -0.4rem;
+    opacity: 0;
+    font-weight: 900;
+    transition: all 0.3s ease;
+}
+
+.learnMore:hover .learnMoreArrow {
+    opacity: 1;
+    right: -1.75rem;
+}
+
+.electrolux,
+.greeneKing,
+.zone {
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.electrolux {
+    color: #06306b;
+}
+
+.greeneKing {
+    color: #115f3f;
+}
+
+.zone {
+    color: #2c2b39;
+}
+
+@media (max-width: 675px) {
+    .experienceSection {
+        flex-direction: column;
+    }
+}
+
+.projects {
+    background-color: rgb(224, 224, 224);
 }
