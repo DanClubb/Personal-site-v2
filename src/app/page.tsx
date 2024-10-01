@@ -82,9 +82,9 @@ export default function Home() {
                     height={375}
                 />
             </section>
-            <section className={`${styles.section} ${styles.projects}`}>
-                Projects
-            </section>
+            <section
+                className={`${styles.section} ${styles.projects}`}
+            ></section>
             <section className={`${styles.section} ${styles.contactMeSection}`}>
                 Contact Me
             </section>
