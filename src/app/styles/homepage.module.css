@@ -148,3 +148,44 @@
 /* /////////////////////////////////////// */
 
 /* //////////// Projects Section //////////// */
+
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.projectCard {
+    width: 25rem;
+    height: 30rem;
+    border-radius: 0.5rem;
+    border: solid 2px var(--complimentary);
+    background-color: var(--complimentary);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.projectCardImg {
+    width: 100%;
+    height: 50%;
+    margin-bottom: 1rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.projectCardInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.projectCardLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}

@@ -6,6 +6,8 @@ import Arrow from "./_components/icons/Arrow";
 import GithubLogo from "./_components/icons/GithubLogo";
 import HeroDevices from "./_components/icons/HeroDevices";
 import LinkedInLogo from "./_components/icons/LinkedInLogo";
+import ProjectCard from "./_components/ProjectCard";
+import { projectsData } from "./data/projectsData";
 import styles from "./styles/homepage.module.css";
 
 export default function Home() {
@@ -82,9 +84,18 @@ export default function Home() {
                     height={375}
                 />
             </section>
-            <section
-                className={`${styles.section} ${styles.projects}`}
-            ></section>
+            <section className={`${styles.section} ${styles.projects}`}>
+                {projectsData.map((project) => (
+                    <ProjectCard
+                        key={project.name}
+                        name={project.name}
+                        description={project.description}
+                        link={project.link}
+                        github={project.github}
+                        image={project.image}
+                    />
+                ))}
+            </section>
             <section className={`${styles.section} ${styles.contactMeSection}`}>
                 Contact Me
             </section>
