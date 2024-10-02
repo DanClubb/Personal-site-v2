@@ -61,7 +61,7 @@ export default function Home() {
                         teams on projects such as implementing responsive
                         e-commerce designs for{" "}
                         <span className={styles.electrolux}>Electrolux</span>,
-                        and improving the user experience of{" "}
+                        improving the user experience of{" "}
                         <span className={styles.greeneKing}>Greene King’s</span>{" "}
                         table reservation app, and leading the development of a
                         car park booking system for{" "}
