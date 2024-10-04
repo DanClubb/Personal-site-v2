@@ -1,15 +1,21 @@
-export default function GithubLogo() {
+export default function GithubLogo({
+    color,
+    size,
+}: {
+    color?: string;
+    size?: string;
+}) {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
             y="0px"
-            width="50"
-            height="50"
+            width={size || "50"}
+            height={size || "50"}
             viewBox="0,0,256,256"
         >
             <g
-                fill="#57ba86"
+                fill={color || "#57ba86"}
                 fill-rule="nonzero"
                 stroke="none"
                 stroke-width="1"

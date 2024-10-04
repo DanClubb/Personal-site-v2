@@ -16,16 +16,17 @@ export const projectsData: Project[] = [
     },
     {
         name: "Diamond Gymnastics",
-        description: "",
+        description:
+            "I developed an engaging and user-friendly website for diamond gymnastics club, focusing on showcasing class schedules, coach profiles, and club events. This project highlights my ability to create appealing, functional designs tailored to client's needs.",
         link: "https://www.diamond-gymnastics.com/",
-        github: "",
+        github: "https://github.com/DanClubb/diamond",
         image: "/images/project-images/diamond.png",
     },
     {
         name: "Fragrance Finds",
         description: "",
         link: "https://fragrance-finds-delta.vercel.app/",
-        github: "",
+        github: "https://github.com/DanClubb/fragrance-finds",
         image: "/images/project-images/frag-finds.png",
     },
 ];
