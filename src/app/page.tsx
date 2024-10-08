@@ -84,17 +84,28 @@ export default function Home() {
                     height={375}
                 />
             </section>
-            <section className={`${styles.section} ${styles.projects}`}>
-                {projectsData.map((project) => (
-                    <ProjectCard
-                        key={project.name}
-                        name={project.name}
-                        description={project.description}
-                        link={project.link}
-                        github={project.github}
-                        image={project.image}
-                    />
-                ))}
+            <section className={`${styles.section} ${styles.projectSection}`}>
+                <p className={styles.projectSectionSummary}>
+                    As a software developer, I spend my free time to enhancing
+                    my skills through personal projects, attending hackathons,
+                    and actively participating in London JS meetups. These
+                    activities allow me to stay up-to-date with the latest
+                    industry trends, collaborate with fellow developers, and
+                    continually grow my expertise in JavaScript and related
+                    technologies.
+                </p>
+                <div className={styles.projects}>
+                    {projectsData.map((project) => (
+                        <ProjectCard
+                            key={project.name}
+                            name={project.name}
+                            description={project.description}
+                            link={project.link}
+                            github={project.github}
+                            image={project.image}
+                        />
+                    ))}
+                </div>
             </section>
             <section className={`${styles.section} ${styles.contactMeSection}`}>
                 Contact Me

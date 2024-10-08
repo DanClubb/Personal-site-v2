@@ -149,6 +149,20 @@
 
 /* //////////// Projects Section //////////// */
 
+.projectSection {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+    margin-top: -2rem;
+}
+
+.projectSectionSummary {
+    margin: 0 auto;
+    width: 70ch;
+    font-size: var(--fs-m);
+    text-align: center;
+}
+
 .projects {
     display: flex;
     justify-content: center;
