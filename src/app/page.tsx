@@ -88,11 +88,10 @@ export default function Home() {
                 <p className={styles.projectSectionSummary}>
                     As a software developer, I spend my free time to enhancing
                     my skills through personal projects, attending hackathons,
-                    and actively participating in London JS meetups. These
-                    activities allow me to stay up-to-date with the latest
-                    industry trends, collaborate with fellow developers, and
-                    continually grow my expertise in JavaScript and related
-                    technologies.
+                    and going to London JS meetups. These activities allow me to
+                    stay up-to-date with the latest industry trends, collaborate
+                    with fellow developers, and continually grow my expertise in
+                    JavaScript and related technologies.
                 </p>
                 <div className={styles.projects}>
                     {projectsData.map((project) => (
