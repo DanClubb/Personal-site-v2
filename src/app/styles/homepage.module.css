@@ -1,6 +1,6 @@
 .section {
     --greenOpacity: rgba(87, 186, 134, 0.75);
-    padding: 4rem;
+    padding: 4rem 0;
 }
 
 .section:nth-child(even) {

@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import heroDevices from "../../public/hero-devices.svg";
 import ZoneLogo from "../../public/zone_straplinelogo_gunmetal-2020-rgb.svg";
+import ContactForm from "./_components/ContactForm";
 import Arrow from "./_components/icons/Arrow";
 import GithubLogo from "./_components/icons/GithubLogo";
 import HeroDevices from "./_components/icons/HeroDevices";
@@ -107,7 +108,7 @@ export default function Home() {
                 </div>
             </section>
             <section className={`${styles.section} ${styles.contactMeSection}`}>
-                Contact Me
+                <ContactForm />
             </section>
         </>
     );
