@@ -6,9 +6,6 @@ import { useFormState, useFormStatus } from "react-dom";
 import styles from "../styles/contact-form.module.css";
 
 const initialState = {
-    name: "",
-    email: "",
-    subject: "",
     message: "",
 };
 
