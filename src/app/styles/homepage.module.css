@@ -17,6 +17,7 @@
     gap: 5rem;
     height: calc(100vh - 5rem);
     text-align: center;
+    position: relative;
 }
 
 .hero h1 {
@@ -29,8 +30,8 @@
 }
 
 .hero p {
-    margin-top: 0.75rem;
-    width: 70ch;
+    margin: 0.75rem auto 0;
+    width: min(70ch, 80%);
 }
 
 .socialLinks {
@@ -57,6 +58,13 @@
 .arrow {
     width: 5rem;
     animation: bounce 1.5s infinite;
+}
+
+.teachIcon {
+    --tranY: translateY(20%);
+    --tranX: translateX(20%);
+    animation: float infinite;
+    z-index: 1;
 }
 
 @keyframes bounce {
@@ -239,5 +247,17 @@
 @media (max-width: 675px) {
     .projects {
         flex-direction: column;
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translate(0);
+    }
+    50% {
+        transform: var(--tranX) var(--tranY);
+    }
+    100% {
+        transform: translate(0);
     }
 }

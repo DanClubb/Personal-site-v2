@@ -1,17 +1,26 @@
 import Image from "next/image";
 import Link from "next/link";
-import heroDevices from "../../public/hero-devices.svg";
+import TECH_LOGOS from "../../public/TechLogos";
 import ZoneLogo from "../../public/zone_straplinelogo_gunmetal-2020-rgb.svg";
 import ContactForm from "./_components/ContactForm";
 import Arrow from "./_components/icons/Arrow";
 import GithubLogo from "./_components/icons/GithubLogo";
-import HeroDevices from "./_components/icons/HeroDevices";
 import LinkedInLogo from "./_components/icons/LinkedInLogo";
 import ProjectCard from "./_components/ProjectCard";
 import { projectsData } from "./data/projectsData";
 import styles from "./styles/homepage.module.css";
 
 export default function Home() {
+    const techLogosArray = Object.keys(TECH_LOGOS);
+    const translates = () =>
+        ({
+            "--tranY": `translateY(${Math.random() > 0.5 ? "-" : ""}${
+                Math.floor(Math.random() * 20) + 10
+            }%)`,
+            "--tranX": `translateX(${Math.random() > 0.5 ? "-" : ""}${
+                Math.floor(Math.random() * 20) + 10
+            }%)`,
+        } as React.CSSProperties);
     return (
         <>
             <section className={`${styles.hero} ${styles.section}`}>
@@ -43,7 +52,112 @@ export default function Home() {
                         </a>
                     </div>
                 </div>
+                <Image
+                    className={styles.teachIcon}
+                    src={TECH_LOGOS.react}
+                    width={50}
+                    style={{
+                        position: "absolute",
+                        top: "1rem",
+                        zIndex: 1,
+                        animationDuration: `${
+                            Math.floor(Math.random() * 7) + 7
+                        }s`,
+                        ...translates(),
+                    }}
+                    alt="React Logo"
+                />
+                <Image
+                    className={styles.teachIcon}
+                    src={TECH_LOGOS.tailwind}
+                    width={50}
+                    style={{
+                        position: "absolute",
+                        top: "3rem",
+                        left: "22rem",
+                        animationDuration: `${
+                            Math.floor(Math.random() * 7) + 7
+                        }s`,
+                        ...translates(),
+                    }}
+                    alt="Tailwind Logo"
+                />
+                <Image
+                    className={styles.teachIcon}
+                    src={TECH_LOGOS.javascript}
+                    width={50}
+                    style={{
+                        position: "absolute",
+                        top: "3rem",
+                        right: "22rem",
+                        animationDuration: `${
+                            Math.floor(Math.random() * 7) + 7
+                        }s`,
+                        ...translates(),
+                    }}
+                    alt="Javascript Logo"
+                />
+                <Image
+                    className={styles.teachIcon}
+                    src={TECH_LOGOS.typescript}
+                    width={50}
+                    style={{
+                        position: "absolute",
+                        top: "12rem",
+                        left: "12rem",
+                        animationDuration: `${
+                            Math.floor(Math.random() * 7) + 7
+                        }s`,
+                        ...translates(),
+                    }}
+                    alt="Typescript Logo"
+                />
+                <Image
+                    className={styles.teachIcon}
+                    src={TECH_LOGOS.css}
+                    width={50}
+                    style={{
+                        position: "absolute",
+                        top: "12rem",
+                        right: "12rem",
+                        animationDuration: `${
+                            Math.floor(Math.random() * 7) + 7
+                        }s`,
+                        ...translates(),
+                    }}
+                    alt="CSS Logo"
+                />{" "}
+                <Image
+                    className={styles.teachIcon}
+                    src={TECH_LOGOS.html}
+                    width={50}
+                    style={{
+                        position: "absolute",
 
+                        top: "24rem",
+                        left: "22rem",
+                        animationDuration: `${
+                            Math.floor(Math.random() * 7) + 7
+                        }s`,
+                        ...translates(),
+                    }}
+                    alt="HTML Logo"
+                />
+                <Image
+                    className={styles.teachIcon}
+                    src={TECH_LOGOS.git}
+                    width={50}
+                    style={{
+                        position: "absolute",
+                        top: "24rem",
+                        right: "22rem",
+                        animationDuration: `${
+                            Math.floor(Math.random() * 7) + 7
+                        }s`,
+                        ...translates(),
+                    }}
+                    alt="Git Logo"
+                />
                 <div>
                     <span className={styles.scroll}>SCROLL</span>
                     <div className={styles.arrow}>
