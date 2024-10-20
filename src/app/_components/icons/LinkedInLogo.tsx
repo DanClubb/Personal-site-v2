@@ -1,4 +1,4 @@
-export default function LinkedInLogo() {
+export default function LinkedInLogo({ color }: { color?: string }) {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -9,7 +9,8 @@ export default function LinkedInLogo() {
             viewBox="0,0,256,256"
         >
             <g
-                fill="#57ba86"
+                // fill={color || "#57ba86"}
+                style={{ fill: color || "#57ba86" }}
                 fillRule="nonzero"
                 stroke="none"
                 strokeWidth="1"

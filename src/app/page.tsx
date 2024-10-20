@@ -41,14 +41,14 @@ export default function Home() {
                             target="_blank"
                             title="LinkedIn"
                         >
-                            <LinkedInLogo />
+                            <LinkedInLogo color="var(--foreground)" />
                         </a>
                         <a
                             href="https://github.com/DanClubb"
                             target="_blank"
                             title="Github"
                         >
-                            <GithubLogo />
+                            <GithubLogo color="var(--foreground)" />
                         </a>
                     </div>
                 </div>
@@ -58,7 +58,7 @@ export default function Home() {
                     width={50}
                     style={{
                         position: "absolute",
-                        top: "1rem",
+                        top: "4rem",
                         zIndex: 1,
                         animationDuration: `${
                             Math.floor(Math.random() * 7) + 7
@@ -73,7 +73,7 @@ export default function Home() {
                     width={50}
                     style={{
                         position: "absolute",
-                        top: "3rem",
+                        top: "7rem",
                         left: "22rem",
                         animationDuration: `${
                             Math.floor(Math.random() * 7) + 7
@@ -88,7 +88,7 @@ export default function Home() {
                     width={50}
                     style={{
                         position: "absolute",
-                        top: "3rem",
+                        top: "7rem",
                         right: "22rem",
                         animationDuration: `${
                             Math.floor(Math.random() * 7) + 7
@@ -103,7 +103,7 @@ export default function Home() {
                     width={50}
                     style={{
                         position: "absolute",
-                        top: "12rem",
+                        top: "16rem",
                         left: "12rem",
                         animationDuration: `${
                             Math.floor(Math.random() * 7) + 7
@@ -118,7 +118,7 @@ export default function Home() {
                     width={50}
                     style={{
                         position: "absolute",
-                        top: "12rem",
+                        top: "16rem",
                         right: "12rem",
                         animationDuration: `${
                             Math.floor(Math.random() * 7) + 7
@@ -134,7 +134,7 @@ export default function Home() {
                     style={{
                         position: "absolute",
 
-                        top: "24rem",
+                        top: "28rem",
                         left: "22rem",
                         animationDuration: `${
                             Math.floor(Math.random() * 7) + 7
@@ -149,7 +149,7 @@ export default function Home() {
                     width={50}
                     style={{
                         position: "absolute",
-                        top: "24rem",
+                        top: "28rem",
                         right: "22rem",
                         animationDuration: `${
                             Math.floor(Math.random() * 7) + 7
@@ -158,16 +158,22 @@ export default function Home() {
                     }}
                     alt="Git Logo"
                 />
-                <div>
+                {/* <div>
                     <span className={styles.scroll}>SCROLL</span>
                     <div className={styles.arrow}>
                         <Arrow />
                     </div>
-                </div>
+                </div> */}
             </section>
             <section
                 className={`${styles.section} ${styles.experienceSection}`}
             >
+                <Image
+                    src={ZoneLogo}
+                    alt="Zone Logo"
+                    width={375}
+                    height={375}
+                />
                 <div>
                     <p>
                         I am a passionate and versatile software developer with
@@ -191,19 +197,12 @@ export default function Home() {
                         <span className={styles.learnMoreArrow}>→</span>
                     </Link>
                 </div>
-
-                <Image
-                    src={ZoneLogo}
-                    alt="Zone Logo"
-                    width={375}
-                    height={375}
-                />
             </section>
             <section className={`${styles.section} ${styles.projectSection}`}>
                 <p className={styles.projectSectionSummary}>
-                    As a software developer, I spend my free time enhancing my
-                    skills through personal projects, attending hackathons, and
-                    going to London JS meetups. These activities allow me to
+                    As a software developer, I also spend my free time enhancing
+                    my skills through personal projects, attending hackathons,
+                    and going to London JS meetups. These activities allow me to
                     stay up-to-date with the latest industry trends, collaborate
                     with fellow developers, and continually grow my expertise in
                     JavaScript and other tech.
