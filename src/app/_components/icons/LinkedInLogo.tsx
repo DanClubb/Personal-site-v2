@@ -4,8 +4,8 @@ export default function LinkedInLogo({ color }: { color?: string }) {
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
             y="0px"
-            width="50"
-            height="50"
+            width="30"
+            height="30"
             viewBox="0,0,256,256"
         >
             <g

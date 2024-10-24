@@ -220,7 +220,10 @@ export default function Home() {
                     ))}
                 </div>
             </section>
-            <section className={`${styles.section} ${styles.contactMeSection}`}>
+            <section
+                id="contact-form"
+                className={`${styles.section} ${styles.contactMeSection}`}
+            >
                 <ContactForm />
             </section>
         </>
